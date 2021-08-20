@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c61d39f5.chunk.css",
+    "main.js": "/static/js/main.06f0d6d4.chunk.js",
+    "main.js.map": "/static/js/main.06f0d6d4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0e08f232.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0e08f232.js.map",
+    "static/css/2.03d409c8.chunk.css": "/static/css/2.03d409c8.chunk.css",
+    "static/js/2.c48704f1.chunk.js": "/static/js/2.c48704f1.chunk.js",
+    "static/js/2.c48704f1.chunk.js.map": "/static/js/2.c48704f1.chunk.js.map",
+    "static/js/3.8d42b5ae.chunk.js": "/static/js/3.8d42b5ae.chunk.js",
+    "static/js/3.8d42b5ae.chunk.js.map": "/static/js/3.8d42b5ae.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.03d409c8.chunk.css.map": "/static/css/2.03d409c8.chunk.css.map",
+    "static/css/main.c61d39f5.chunk.css.map": "/static/css/main.c61d39f5.chunk.css.map",
+    "static/js/2.c48704f1.chunk.js.LICENSE.txt": "/static/js/2.c48704f1.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Barlow-Regular.952f8963.ttf",
+    "static/media/Hamburger.d9fb49cc.svg": "/static/media/Hamburger.d9fb49cc.svg",
+    "static/media/Menu.34ffb4fa.svg": "/static/media/Menu.34ffb4fa.svg",
+    "static/media/Store.ba38a3d6.svg": "/static/media/Store.ba38a3d6.svg",
+    "static/media/cart.392ac937.svg": "/static/media/cart.392ac937.svg",
+    "static/media/close.52ef09f6.svg": "/static/media/close.52ef09f6.svg",
+    "static/media/down.c4db961d.svg": "/static/media/down.c4db961d.svg",
+    "static/media/download.0ab48c4c.svg": "/static/media/download.0ab48c4c.svg",
+    "static/media/facebook.b9e496a5.svg": "/static/media/facebook.b9e496a5.svg",
+    "static/media/hermes.b956c037.jpg": "/static/media/hermes.b956c037.jpg",
+    "static/media/instagram.145e26f1.svg": "/static/media/instagram.145e26f1.svg",
+    "static/media/linkedin.0904bc36.svg": "/static/media/linkedin.0904bc36.svg",
+    "static/media/minus.cd1d4ef0.svg": "/static/media/minus.cd1d4ef0.svg",
+    "static/media/plus.3b3a5cc1.svg": "/static/media/plus.3b3a5cc1.svg",
+    "static/media/search.f8c9c140.svg": "/static/media/search.f8c9c140.svg",
+    "static/media/up.931e429a.svg": "/static/media/up.931e429a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0e08f232.js",
+    "static/css/2.03d409c8.chunk.css",
+    "static/js/2.c48704f1.chunk.js",
+    "static/css/main.c61d39f5.chunk.css",
+    "static/js/main.06f0d6d4.chunk.js"
+  ]
+}
