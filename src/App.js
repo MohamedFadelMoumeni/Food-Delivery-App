@@ -1,36 +1,41 @@
-import React from 'react';
+import React , {lazy, Suspense} from 'react';
 import {useHistory} from "react-router-dom";
 import Header from './components/Header/Header.component';
 import Footer from './components/Footer/Footer.component';
-
-import Homepage from './pages/Homepage/Homepage.component';
-import Products from './pages/Product/Product.component';
-import SignIn from './pages/Signin/Signin.component'
-import SignUp from './pages/Signup/Signup.component';
-import Forgotpassword from "./pages/ForgotPassword/ForgotPassword.component";
-import Checkout from "./pages/Checkout/Checkout.component";
-
 import {Switch, Route} from 'react-router-dom';
+
+import Spinner from './components/Spinner/Spinner.component';
 
 import './App.css';
 
+const LazyHome = lazy(() => import ("./pages/Homepage/Homepage.component"));
+const LazyProducts = lazy(() => import ("./pages/Product/Product.component"));
+const LazySignIn = lazy(() => import ("./pages/Signin/Signin.component"));
+const LazySignUp = lazy(() => import ("./pages/Signup/Signup.component"));
+const LazyForgotpassword  = lazy(() => import ("./pages/ForgotPassword/ForgotPassword.component"));
+const LazyCheckout = lazy(() => import ("./pages/Checkout/Checkout.component"));
+
+
+
 function App() {
-  const history = useHistory();
+
   return (
     
       <div className="app">
-      <Header />
+   <Suspense fallback={<Spinner />}>
+   <Header />
       <Switch>
-      <Route exact path="/" component={Homepage}/>
-      <Route exact path="/products" component={Products} />
-      <Route exact path="/sign-in" component={SignIn} />
-      <Route exact path="/sign-up" component={SignUp}/>
-      <Route exact path="/forgot-password" component={Forgotpassword} />
-      <Route exact path="/checkout" component={Checkout}/>
+      <Route exact path="/" component={LazyHome}/>
+      <Route exact path="/products" component={LazyProducts} />
+      <Route exact path="/sign-in" component={LazySignIn} />
+      <Route exact path="/sign-up" component={LazySignUp}/>
+      <Route exact path="/forgot-password" component={LazyForgotpassword} />
+      <Route exact path="/checkout" component={LazyCheckout}/>
       
       
       </Switch>
       <Footer />
+   </Suspense>
       </div>
       
     
