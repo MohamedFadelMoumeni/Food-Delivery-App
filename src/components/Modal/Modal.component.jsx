@@ -6,7 +6,7 @@ import Plus from '../../assets/plus.svg';
 
 import {ModalContainer, ModalWrapper, ModalTop, ModalProductImg, 
     ProductTitle, ModalDown, OrderButton, Content, Details, 
-    DetailsTitle, CustomizeInput, Count, ItemCount} from './Modal.styles';
+    DetailsTitle, CustomizeInput, Count, ItemCount, Description} from './Modal.styles';
 const Modal = ({setOpen}) => {
     return (
         <ModalContainer >
@@ -20,7 +20,8 @@ const Modal = ({setOpen}) => {
                 <Details>
                     <DetailsTitle>Special Instructions</DetailsTitle>
                     <CustomizeInput placeholder="Add any special requests . 500 characters left" type="text" />
-                    
+                    <DetailsTitle style={{marginTop: '10px'}}>Description : </DetailsTitle>
+                    <Description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, praesentium ipsa. Fugiat distinctio doloribus repellat libero voluptates sequi quibusdam impedit.</Description>
                 </Details>
                 </Content>
                 <ModalDown>

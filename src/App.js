@@ -3,7 +3,7 @@ import {useHistory} from "react-router-dom";
 import Header from './components/Header/Header.component';
 import Footer from './components/Footer/Footer.component';
 import {Switch, Route} from 'react-router-dom';
-
+import {fetchStores} from "./services/stores/stores.service";
 import Spinner from './components/Spinner/Spinner.component';
 
 import './App.css';
@@ -18,6 +18,7 @@ const LazyCheckout = lazy(() => import ("./pages/Checkout/Checkout.component"));
 
 
 function App() {
+ 
 
   return (
     
@@ -26,7 +27,7 @@ function App() {
    <Header />
       <Switch>
       <Route exact path="/" component={LazyHome}/>
-      <Route exact path="/products" component={LazyProducts} />
+      <Route  path="/products" component={LazyProducts} />
       <Route exact path="/sign-in" component={LazySignIn} />
       <Route exact path="/sign-up" component={LazySignUp}/>
       <Route exact path="/forgot-password" component={LazyForgotpassword} />

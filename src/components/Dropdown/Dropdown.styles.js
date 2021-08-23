@@ -40,6 +40,9 @@ border-radius: 10px;
 box-shadow:  0px 0px 3px 0px  #C9CED6;
 overflow-y: scroll;
 transition: opacity .3s;
+display: flex;
+flex-direction: column;
+
 
 `;
 export const TopDrop = styled.div`
@@ -59,6 +62,8 @@ export const Content = styled.div`
 width : 100%;
 padding: 4rem 1rem;
 text-align:center;
+flex: 1;
+
 
 `;
 export const EmptyText =styled.span`
@@ -66,5 +71,21 @@ color: #000;
 font-size: 1.8rem;
 text-align:center;
 font-family : 'Barlow-Regular', sans-serif;
+
+`;
+
+export const Button = styled.button`
+color: #fff;
+font-size: 1.8rem;
+text-align:center;
+font-family : 'Barlow-Regular', sans-serif;
+background-color: #333333;
+border: 0;
+padding: 1rem 2rem;
+align-self: flex-start;
+border-radius: 20px;
+cursor: pointer;
+margin: 1rem;
+
 `;
 

@@ -157,3 +157,10 @@ border-radius: 10px;
 background: #EEEEEE;
 font-family:'Barlow-Bold', sans-serif;
 `;
+
+export const Description = styled.span`
+font-size: 1.7rem;
+font-family: 'Barlow-Regular', sans-serif;
+color: #000;
+padding-top: 1rem;
+`;

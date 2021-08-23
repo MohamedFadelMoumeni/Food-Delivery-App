@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import  Down from '../../assets/down.svg';
 import Up from '../../assets/up.svg';
 
-const ItemFilterComponent = ({title, children}) => {
+const ItemFilterComponent = ({title, children, column}) => {
     const [open, setOpen] = useState(false);
     return(
         <ItemFilter onClick={() => setOpen(!open)}>
@@ -15,7 +15,7 @@ const ItemFilterComponent = ({title, children}) => {
         {
             open ? 
             (
-                <FilterContent>{children}</FilterContent>
+                <FilterContent column={column}>{children}</FilterContent>
             ) : null
         }
     </ItemFilter>
@@ -59,6 +59,6 @@ transform:${props => props.open ? "rotate(180deg)" : null};
 const FilterContent = styled.div`
 width: 100%;
 display: flex;
-
+${props => props.column && `flex-direction: column`};
 margin-top: 1rem;
 `;
